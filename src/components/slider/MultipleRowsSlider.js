@@ -33,7 +33,7 @@ const MultipleRowsSlider = ({ children, slideShow }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          rows: 1,
+          rows: 3,
         },
       },
       {

@@ -112,7 +112,7 @@ const Index = ({
             </HomeSlider>
           </div>
         </section>
-        <section className="banner-area pt-30 pl-15 pr-15">
+        {/* <section className="banner-area pt-30 pl-15 pr-15">
           <div className="container-fluid">
             <div className="row">
               {home1 &&
@@ -129,7 +129,7 @@ const Index = ({
                 ))}
             </div>
           </div>
-        </section>
+        </section> */}
         <HomePageProducts products={products} />
         {/* {topSeller && (
           <section className="top-seller-area box-90">

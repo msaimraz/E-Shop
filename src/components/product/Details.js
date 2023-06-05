@@ -17,7 +17,6 @@ import {
 import { simpleProductFilter } from "../../utils/filterProduct";
 import RelatedProduct from "../slider/RelatedProduct";
 import Product from "./Product";
-import Image from 'next/image'
 
 const Details = ({
   addToCart,
@@ -96,7 +95,7 @@ const Details = ({
                                 onClick={(e) => e.preventDefault()}
                                 eventKey={`tum-${i}`}
                               >
-                                <Image src={img.src} alt="Tum" />{" "}
+                                <img src={img.src} alt="Tum" />{" "}
                               </Nav.Link>
                             </Nav.Item>
                           ))}
@@ -109,7 +108,7 @@ const Details = ({
                         product.images.map((img, i) => (
                           <Tab.Pane key={i} eventKey={`tum-${i}`}>
                             <div className="product-large-img">
-                              <Image src={img.src} alt="tum" />
+                              <img src={img.src} alt="tum" />
                             </div>
                           </Tab.Pane>
                         ))}
@@ -127,7 +126,7 @@ const Details = ({
                                 onClick={(e) => e.preventDefault()}
                                 eventKey={`tum-${i}`}
                               >
-                                <Image src={img.src} alt="Tum" />{" "}
+                                <img src={img.src} alt="Tum" />{" "}
                               </Nav.Link>
                             </Nav.Item>
                           ))}
@@ -215,7 +214,7 @@ const Details = ({
                                 key={size}
                                 className={
                                   size.toLowerCase() ===
-                                    product.size.toLowerCase()
+                                  product.size.toLowerCase()
                                     ? "active"
                                     : ""
                                 }
@@ -283,8 +282,9 @@ const Details = ({
                           </div>
                         </div>
                         <button
-                          className={`${wishlist ? "active" : ""
-                            } details-action-icon`}
+                          className={`${
+                            wishlist ? "active" : ""
+                          } details-action-icon`}
                           type="submit"
                           onClick={(e) => onClickWishlist(e)}
                         >
@@ -367,7 +367,7 @@ const Details = ({
                           <div className="product-commnets">
                             <div className="product-commnets-list mb-25 pb-15">
                               <div className="pro-comments-img">
-                                <Image
+                                <img
                                   src="/img/product/comments/01.png"
                                   alt="img"
                                 />
@@ -393,7 +393,7 @@ const Details = ({
                             </div>
                             <div className="product-commnets-list mb-25 pb-15">
                               <div className="pro-comments-img">
-                                <Image
+                                <img
                                   src="/img/product/comments/02.png"
                                   alt="img"
                                 />
@@ -480,7 +480,7 @@ const Details = ({
               <div className="col-xl-4 col-lg-4">
                 <div className="pro-details-banner">
                   <Link href="/shop">
-                    <Image src="/img/banner/pro-details.jpg" alt="img" />
+                    <img src="/img/banner/pro-details.jpg" alt="img" />
                   </Link>
                 </div>
               </div>

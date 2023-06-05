@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { filterBlog } from "../../utils/filterBlog";
-import Image from 'next/image'
-
 
 const BlogSideBar = ({ blog, blogs }) => {
   return (
@@ -13,7 +11,7 @@ const BlogSideBar = ({ blog, blogs }) => {
         </div>
         {blog && blog.author && (
           <div className="about-me text-center">
-            <Image src={blog.author.img} alt="Profile" />
+            <img src={blog.author.img} alt="Profile" />
             <h4>{blog.author.name}</h4>
             <p>{blog.author.bio}</p>
             <div className="widget-social-icon">
@@ -37,13 +35,14 @@ const BlogSideBar = ({ blog, blogs }) => {
             {filterBlog(blog.categorie, blogs).map((b, i) => (
               <li
                 key={i}
-                className={`${i <= 2 ? (b.id === blog.id ? "d-none" : "") : "d-none"
-                  }`}
+                className={`${
+                  i <= 2 ? (b.id === blog.id ? "d-none" : "") : "d-none"
+                }`}
               >
                 <div className="widget-posts-image">
                   <Link href={`/blog/${b.id}`}>
                     <a>
-                      <Image src={b.img} alt="blog" />
+                      <img src={b.img} alt="blog" />
                     </a>
                   </Link>
                 </div>
@@ -162,7 +161,7 @@ const BlogSideBar = ({ blog, blogs }) => {
       <div className="widget mb-40 p-0 b-0">
         <div className="banner-widget">
           <a href="#" onClick={(e) => e.preventDefault()}>
-            <Image src="/img/blog/details/banner.jpg" alt="Banner" />
+            <img src="/img/blog/details/banner.jpg" alt="Banner" />
           </a>
         </div>
       </div>

@@ -6,8 +6,6 @@ import {
   addWishlist,
   decreaseCart,
 } from "../../redux/action/utilis";
-import Image from 'next/image'
-
 const ProductModal = ({
   show,
   handleClose,
@@ -37,7 +35,7 @@ const ProductModal = ({
                     product.images.map((img, i) => (
                       <Tab.Pane key={i} eventKey={`tum-${i}`}>
                         <div className="product-large-img">
-                          <Image src={img.src} alt="tum" />
+                          <img src={img.src} alt="tum" />
                         </div>
                       </Tab.Pane>
                     ))}
@@ -55,7 +53,7 @@ const ProductModal = ({
                           onClick={(e) => e.preventDefault()}
                           eventKey={`tum-${i}`}
                         >
-                          <Image src={img.src} alt="Tum" />{" "}
+                          <img src={img.src} alt="Tum" />{" "}
                         </Nav.Link>
                       </Nav.Item>
                     ))}
@@ -183,8 +181,9 @@ const ProductModal = ({
                       </div>
                     </div>
                     <button
-                      className={`${wishlist ? "active" : ""
-                        } details-action-icon`}
+                      className={`${
+                        wishlist ? "active" : ""
+                      } details-action-icon`}
                       type="submit"
                       onClick={() => {
                         addWishlist(product);

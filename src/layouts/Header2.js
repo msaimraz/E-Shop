@@ -4,7 +4,6 @@ import DasktopHeader2 from "./header/DasktopHeader2";
 import MobileHeader from "./header/MobileHeader";
 import SearchTrigger from "./header/SearchTrigger";
 import ShopCart from "./header/ShopCart";
-import Image from 'next/image'
 
 const Header2 = () => {
   return (
@@ -19,7 +18,7 @@ const Header2 = () => {
               <div className="logo text-left text-md-center">
                 <Link href="/shop">
                   <a>
-                    <Image src="img/logo/logo.png" alt="img" />
+                    <img src="img/logo/logo.png" alt="img" />
                   </a>
                 </Link>
               </div>

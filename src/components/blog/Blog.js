@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { dblock } from "../../utils/utils";
-import Image from 'next/image'
 
 const Blog = ({ blog, active, sort, extraClass, column, id }) => {
   return (
@@ -15,7 +14,7 @@ const Blog = ({ blog, active, sort, extraClass, column, id }) => {
         <div className="postbox__thumb">
           <Link href={`/blog/${blog.id}`}>
             <a>
-              <Image src={blog.img} alt="blog image" />
+              <img src={blog.img} alt="blog image" />
             </a>
           </Link>
         </div>

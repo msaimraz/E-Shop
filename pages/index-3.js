@@ -14,7 +14,6 @@ import { getProducts } from "../src/redux/action/product";
 import { getUpcomingProduct } from "../src/redux/action/upcomingProduct";
 import { filterBlog } from "../src/utils/filterBlog";
 import { simpleProductFilter } from "../src/utils/filterProduct";
-import Image from 'next/image'
 
 const Index3 = ({
   blogs,
@@ -52,7 +51,7 @@ const Index3 = ({
                             data-animation="fadeInLeft"
                             data-delay=".2s"
                           >
-                            <Image src={slide.bannerImg} alt="Banner Img" />
+                            <img src={slide.bannerImg} alt="Banner Img" />
                           </div>
                         </div>
                         <div className="col-xl-7 col-lg-7 col-md-8">
@@ -60,7 +59,7 @@ const Index3 = ({
                             <h2>{slide.title}</h2>
                           </div>
                           <div className="shape-icon shape-icon-3 bounce-animate">
-                            <Image src={slide.thumb} alt="thumb" />
+                            <img src={slide.thumb} alt="thumb" />
                           </div>
                           <div className="slide-content slide-content-3 pt-80 pl-30">
                             <span data-animation="fadeInRight" data-delay=".4s">

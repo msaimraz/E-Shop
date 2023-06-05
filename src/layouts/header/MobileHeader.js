@@ -10,10 +10,11 @@ const MobileHeader = () => {
       <div className="mean-bar">
         <a
           href="#nav"
-          className={`meanmenu-reveal ${mainHeader
+          className={`meanmenu-reveal ${
+            mainHeader
               ? "d-flex align-items-center justify-content-center fs-18"
               : ""
-            }`}
+          }`}
           onClick={(e) => {
             setMainHeader(!mainHeader);
             e.preventDefault();
@@ -45,7 +46,7 @@ const MobileHeader = () => {
               >
                 {subMenu === "home" ? "-" : "+"}
               </a>
-              {/* <ul className={`submenu ${subMenu === "home" ? "block" : ""}`}>
+              <ul className={`submenu ${subMenu === "home" ? "block" : ""}`}>
                 <li>
                   <Link href="/">
                     <a>Home Style 1</a>
@@ -71,9 +72,9 @@ const MobileHeader = () => {
                     <a>Home Style 5</a>
                   </Link>
                 </li>
-              </ul> */}
+              </ul>
             </li>
-            {/* <li className="mega-menu">
+            <li className="mega-menu">
               <Link href="/shop">Shop</Link>
               <a
                 className="mean-expand"
@@ -179,11 +180,11 @@ const MobileHeader = () => {
                   </a>
                 </li>
               </ul>
-            </li> */}
+            </li>
             <li>
               <Link href="/products">Products </Link>
             </li>
-            {/* <li>
+            <li>
               <Link href="/blog">
                 <a>Blog</a>
               </Link>
@@ -226,7 +227,7 @@ const MobileHeader = () => {
               >
                 {subMenu === "blog" ? "-" : "+"}
               </a>
-            </li> */}
+            </li>
             <li>
               <a href="#">Pages</a>
               <ul className={`submenu ${subMenu === "page" ? "block" : ""}`}>

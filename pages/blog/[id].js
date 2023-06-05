@@ -7,7 +7,6 @@ import VideoPopUp from "../../src/components/VideoPopUp";
 import Layout from "../../src/layouts/Layout";
 import PageTitle from "../../src/layouts/PageTitle";
 import { getBlog, getSingleBlog } from "../../src/redux/action/blog";
-import Image from 'next/image'
 
 const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
   const router = useRouter();
@@ -35,7 +34,7 @@ const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
                   <article className="postbox post format-image mb-40">
                     {blog.video ? (
                       <div className="postbox__video mb-35">
-                        <Image src={blog.img} alt="Blog" />
+                        <img src={blog.img} alt="Blog" />
                         <a
                           className="popup-video video-btn"
                           href="#"
@@ -50,7 +49,7 @@ const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
                     ) : (
                       blog.img && (
                         <div className="postbox__thumb mb-35">
-                          <Image src={blog.img} alt="blog image" />
+                          <img src={blog.img} alt="blog image" />
                         </div>
                       )
                     )}
@@ -127,7 +126,7 @@ const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
                           </p>
                           {blog.des.div.div[0].img && (
                             <div className="blog-inner-img mb-30 mt-30">
-                              <Image
+                              <img
                                 src={blog.des.div.div[0].img.src}
                                 alt="blog image"
                               />
@@ -225,7 +224,7 @@ const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
                         <div className="col-xl-2 col-lg-2 col-md-2 ">
                           <div className="bakix-filter text-left text-md-center mb-30">
                             <a href="#">
-                              <Image src="/img/icon/filter.png" alt="filter" />
+                              <img src="/img/icon/filter.png" alt="filter" />
                             </a>
                           </div>
                         </div>
@@ -254,7 +253,7 @@ const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
                     {blog.author && (
                       <div className="author mt-80 mb-40">
                         <div className="author-img text-center">
-                          <Image src={blog.author.img} alt="Author image" />
+                          <img src={blog.author.img} alt="Author image" />
                         </div>
                         <div className="author-text text-center">
                           <h3>MD. Salim Rana</h3>
@@ -301,7 +300,7 @@ const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
                               <li key={i}>
                                 <div className="comments-box">
                                   <div className="comments-avatar">
-                                    <Image
+                                    <img
                                       src={comment.profilePic}
                                       alt="profilePic"
                                     />
@@ -330,7 +329,7 @@ const BlogDetails = ({ getSingleBlog, getBlog, blogs, blog }) => {
                                           }}
                                         >
                                           <div className="comments-avatar">
-                                            <Image
+                                            <img
                                               src={replay.profilePic}
                                               alt="Profile Pic"
                                             />

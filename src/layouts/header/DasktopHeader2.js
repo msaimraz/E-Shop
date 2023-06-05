@@ -31,7 +31,7 @@ const DasktopHeader3 = () => {
                   <Link href="/">
                     <a>Home</a>
                   </Link>
-                  {/* <ul className="submenu">
+                  <ul className="submenu">
                     <li>
                       <Link href="/">
                         <a>Home Style 1</a>
@@ -57,9 +57,9 @@ const DasktopHeader3 = () => {
                         <a>Home Style 5</a>
                       </Link>
                     </li>
-                  </ul> */}
+                  </ul>
                 </li>
-                {/* <li className="mega-menu">
+                <li className="mega-menu">
                   <Link href="/shop">Shop</Link>
                   <ul className="submenu ">
                     <li>
@@ -132,11 +132,11 @@ const DasktopHeader3 = () => {
                       </ul>
                     </li>
                   </ul>
-                </li> */}
+                </li>
                 <li>
                   <Link href="/products">Products </Link>
                 </li>
-                {/* <li>
+                <li>
                   <Link href="/blog">
                     <a>Blog</a>
                   </Link>
@@ -172,7 +172,7 @@ const DasktopHeader3 = () => {
                       </Link>
                     </li>
                   </ul>
-                </li> */}
+                </li>
                 <li>
                   <a href="#" onClick={(e) => e.preventDefault()}>
                     Pages

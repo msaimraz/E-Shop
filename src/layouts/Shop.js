@@ -10,7 +10,6 @@ import { getProductByFilter } from "../utils/filterProduct";
 import { activeData, dblock } from "../utils/utils";
 import Layout from "./Layout";
 import PageTitle from "./PageTitle";
-import Image from "next/image";
 
 const Shop = ({
   products,
@@ -36,7 +35,7 @@ const Shop = ({
               {leftSideBar && <Filter setActive_={() => setActive(0)} />}
               <div className="col-xl-8 col-lg-8">
                 <div className="shop-banner mb-50">
-                  <Image src={banner} alt="Banner" />
+                  <img src={banner} alt="Banner" />
                 </div>
 
                 <TabContainer

@@ -1,23 +1,23 @@
-import Image from 'next/image'
-
 const Newsletter = ({ container }) => {
   return (
     <section className="subscribe-area box-105">
       <div
-        className={`${container ? "container" : "subscribe-inner black-bg pt-70 pb-20"
-          }`}
+        className={`${
+          container ? "container" : "subscribe-inner black-bg pt-70 pb-20"
+        }`}
       >
         <div
-          className={`${container
-            ? "subscribe-inner black-bg pt-70 pb-20"
-            : "container-fluid"
-            }`}
+          className={`${
+            container
+              ? "subscribe-inner black-bg pt-70 pb-20"
+              : "container-fluid"
+          }`}
         >
           <div className="row">
             <div className="col-xl-5">
               <div className="subscribe d-flex fix">
                 <div className="subscribe-icon">
-                  <Image src="img/icon/subscribe.png" alt="" />
+                  <img src="img/icon/subscribe.png" alt="" />
                 </div>
                 <div className="area-title white-color mb-50">
                   <h2>Newsletter</h2>

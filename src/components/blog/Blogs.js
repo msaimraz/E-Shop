@@ -1,6 +1,4 @@
 import Link from "next/link";
-import Image from 'next/image'
-
 const Blogs = ({ blogs, container }) => {
   // const { img, title, date, author, comments, des, id } = blog;
   return (
@@ -20,7 +18,7 @@ const Blogs = ({ blogs, container }) => {
               <div className="col-xl-4 col-lg-6 col-md-6" key={blog.id}>
                 <div className="latest-news mb-40">
                   <div className="news__thumb mb-25">
-                    <Image src={blog.img} alt={blog.title} />
+                    <img src={blog.img} alt={blog.title} />
                   </div>
                   <div className="news__caption white-bg">
                     <div className="news-meta mb-15">

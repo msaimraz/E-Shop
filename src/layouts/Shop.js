@@ -10,6 +10,7 @@ import { getProductByFilter } from "../utils/filterProduct";
 import { activeData, dblock } from "../utils/utils";
 import Layout from "./Layout";
 import PageTitle from "./PageTitle";
+import Image from "next/image";
 
 const Shop = ({
   products,

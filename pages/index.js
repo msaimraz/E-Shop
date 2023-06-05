@@ -96,9 +96,8 @@ const Index = ({
                           {slide.images &&
                             slide.images.map((img, j) => (
                               <div
-                                className={`slide-shape${
-                                  j + 1
-                                } wow bounceInRight`}
+                                className={`slide-shape${j + 1
+                                  } wow bounceInRight`}
                                 data-delay={j === 0 ? ".9s" : "1.2s"}
                                 key={j}
                               >
@@ -219,10 +218,10 @@ const Index = ({
           </section>
         )}
 
-        <HomePageSingleProduct products={products} />
+        {/* <HomePageSingleProduct products={products} />
         <UpcomingProduct upcomingProduct={upcomingProduct} />
         {blogs && <Blogs blogs={blogs} />}
-        <Newsletter />
+        <Newsletter /> */}
       </main>
     </Layout>
   );

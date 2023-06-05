@@ -5,7 +5,7 @@ import Product from "./Product";
 
 const HomePageProducts = ({ products }) => {
   return (
-    <section className="product-area box-90 pt-70 pb-40 slick-slider" style=" overflow: hidden;">
+    <section className="product-area box-90 pt-70 pb-40 slick-slider">
       <div className="container-fluid">
         <TabContainer defaultActiveKey="all">
           <div className="row">

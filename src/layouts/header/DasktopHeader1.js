@@ -36,7 +36,7 @@ const DasktopHeader = ({ whiteMenu }) => {
               </li>
             </ul> */}
           </li>
-          <li className="mega-menu">
+          {/* <li className="mega-menu">
             <Link href="/shop">Shop</Link>
             <ul className="submenu ">
               <li>
@@ -106,7 +106,7 @@ const DasktopHeader = ({ whiteMenu }) => {
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> */}
           <li>
             <Link href="/products">Products </Link>
           </li>

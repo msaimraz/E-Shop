@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Slider from "react-slick";
-import Image from 'next/image'
 
 const ImageSlider = ({ imageSlider }) => {
   var settings = {

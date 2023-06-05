@@ -13,6 +13,7 @@ import ColorFilter from "./ColorFilter";
 import FilterByCheckBox from "./FilterByCheckBox";
 import FilterByTags from "./FilterByTags";
 import PriceFilter from "./PriceFilter";
+import Image from 'next/image'
 
 const Filter = ({
   filterByName,
@@ -103,7 +104,7 @@ const Filter = ({
                     <li key={product.id}>
                       <div className="side-pro-img">
                         <Link href={`/shop/${product.id}`}>
-                          <img src={product.img2} alt="Product" />
+                          <Image src={product.img2} alt="Product" />
                         </Link>
                       </div>
                       <div className="side-pro-content">
@@ -133,7 +134,7 @@ const Filter = ({
         <div className="shop-widget">
           <div className="shop-sidebar-banner">
             <Link href="/shop">
-              <img src="img/banner/shop-banner.jpg" alt="Banner" />
+              <Image src="img/banner/shop-banner.jpg" alt="Banner" />
             </Link>
           </div>
         </div>

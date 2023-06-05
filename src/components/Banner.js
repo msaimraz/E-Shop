@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from 'next/image'
+
 const Banner = ({ banner }) => {
   return (
     <section className="banner-area pt-30 box-90">
@@ -8,7 +10,7 @@ const Banner = ({ banner }) => {
             <div className="banner-2 pos-relative mb-30">
               <Link href="/shop">
                 <a>
-                  <img src={banner && banner.one.img} alt="Banner image" />
+                  <Image src={banner && banner.one.img} alt="Banner image" />
                 </a>
               </Link>
 
@@ -34,14 +36,14 @@ const Banner = ({ banner }) => {
             <div className="banner-2 pos-relative mb-30">
               <Link href="/shop">
                 <a>
-                  <img src={banner && banner.two.img} alt="Banner" />
+                  <Image src={banner && banner.two.img} alt="Banner" />
                 </a>
               </Link>
 
               <div className="banner-look">
                 <span>{banner && banner.two.subTitle}</span>
                 <h2>{banner && banner.two.title}</h2>
-                <img src={banner && banner.two.lookImg} alt="Look" />
+                <Image src={banner && banner.two.lookImg} alt="Look" />
                 <p>{banner && banner.two.text}</p>
                 <Link href="/shop">
                   <a className="btn theme-btn">{banner && banner.two.link}</a>

@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import Slider from "react-slick";
+import Image from 'next/image'
 
 const ImageSlider = ({ imageSlider }) => {
   var settings = {
@@ -25,7 +27,7 @@ const ImageSlider = ({ imageSlider }) => {
           {imageSlider &&
             imageSlider.map((img, i) => (
               <div className="instagram-item" key={i}>
-                <img src={img} alt="Image" style={{ width: "100%" }} />
+                <Image src={img} alt="Image" style={{ width: "100%" }} />
               </div>
             ))}
         </Slider>

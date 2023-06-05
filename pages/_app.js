@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Provider store={store}>
       <Head>
-        <title>Vue - Clean Minimal eCommerce Redux Template</title>
+        <title>Vue - Clean Minimal eCommerce Redux</title>
         <meta name="description" content />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="site.webmanifest" />

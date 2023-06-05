@@ -4,6 +4,8 @@ import toast from "react-hot-toast";
 import { connect, useSelector } from "react-redux";
 import { getCarts, removeCart } from "../../redux/action/utilis";
 import { totalPrice } from "../../utils/utils";
+import Image from 'next/image'
+
 const ShopCart = ({ removeCart, getCarts }) => {
   useEffect(() => {
     getCarts();
@@ -23,7 +25,7 @@ const ShopCart = ({ removeCart, getCarts }) => {
               <div className="cart-img">
                 <Link href={`/shop/${cart.id}`}>
                   <a>
-                    <img src={cart.img1} alt="Cart" />
+                    <Image src={cart.img1} alt="Cart" />
                   </a>
                 </Link>
               </div>

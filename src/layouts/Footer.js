@@ -3,15 +3,15 @@ import Link from "next/link";
 import Banner from "../../public/img/banner/add.jpg";
 import Time from "../../public/img/icon/time.png";
 import Logo from "../../public/img/logo/footer-logo.png";
+
 const Footer = ({ container, footerBg, textCenter }) => {
   return (
     <footer>
       <div
-        className={`${
-          !container
-            ? "footer-area box-90 pt-100 pb-60"
-            : "footer-area pl-100 pr-100 mt-100"
-        }`}
+        className={`${!container
+          ? "footer-area box-90 pt-100 pb-60"
+          : "footer-area pl-100 pr-100 mt-100"
+          }`}
       >
         <div
           className={footerBg ? "footer-area box-90 pt-100 pb-60" : ""}
@@ -182,19 +182,17 @@ const Footer = ({ container, footerBg, textCenter }) => {
           <div className={`${footerBg ? "" : "copyright-border"} pt-30 pb-30`}>
             <div className="row">
               <div
-                className={`${
-                  textCenter ? "col-xl-12" : "col-xl-6 col-lg-6 col-md-6"
-                }`}
+                className={`${textCenter ? "col-xl-12" : "col-xl-6 col-lg-6 col-md-6"
+                  }`}
               >
                 <div
-                  className={`copyright text-center  ${
-                    textCenter ? "" : "text-md-left"
-                  }`}
+                  className={`copyright text-center  ${textCenter ? "" : "text-md-left"
+                    }`}
                 >
                   <p>
                     Copyright © {new Date().getFullYear()}{" "}
                     <a href="#" onClick={(e) => e.preventDefault()}>
-                      BasicTheme
+                      Vue
                     </a>
                     . All Rights Reserved
                   </p>

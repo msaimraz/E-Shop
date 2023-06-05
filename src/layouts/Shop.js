@@ -35,7 +35,7 @@ const Shop = ({
               {leftSideBar && <Filter setActive_={() => setActive(0)} />}
               <div className="col-xl-8 col-lg-8">
                 <div className="shop-banner mb-50">
-                  <img src={banner} alt="Banner" />
+                  <Image src={banner} alt="Banner" />
                 </div>
 
                 <TabContainer

@@ -3,6 +3,7 @@ import Link from "next/link";
 import React, { Fragment, useState } from "react";
 // import logoWhite from "/img/logo/logo-white.png";
 // import logo from "/img/logo/logo.png";
+import Image from 'next/image'
 
 const Catagory = ({ whiteMenu }) => {
   const [catMenu, setCatMenu] = useState(false);
@@ -31,7 +32,7 @@ const Catagory = ({ whiteMenu }) => {
       <div className="logo mt-2">
         <Link href="/">
           <a>
-            <img
+            <Image
               src={
                 whiteMenu ? "/img/logo/logo-white.png" : "/img/logo/logo.png"
               }

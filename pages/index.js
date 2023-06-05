@@ -131,7 +131,7 @@ const Index = ({
           </div>
         </section>
         <HomePageProducts products={products} />
-        {topSeller && (
+        {/* {topSeller && (
           <section className="top-seller-area box-90">
             <div className="container-fluid">
               <div className="row">
@@ -216,7 +216,7 @@ const Index = ({
               </div>
             </div>
           </section>
-        )}
+        )} */}
 
         {/* <HomePageSingleProduct products={products} />
         <UpcomingProduct upcomingProduct={upcomingProduct} />

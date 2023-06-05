@@ -13,6 +13,7 @@ import { getFeatures } from "../src/redux/action/features";
 import { getHome4 } from "../src/redux/action/home";
 import { getProducts } from "../src/redux/action/product";
 import { filterBlog } from "../src/utils/filterBlog";
+import Image from 'next/image'
 
 const Index4 = ({
   getHome4,
@@ -57,7 +58,7 @@ const Index4 = ({
                       <h2>{new Date().getFullYear()}</h2>
                     </div>
                     <div className="shape-icon shape-icon-4 bounce-animate">
-                      <img src={slide.shapImg} alt="Shap" />
+                      <Image src={slide.shapImg} alt="Shap" />
                     </div>
                     <div className="container">
                       <div className="row">

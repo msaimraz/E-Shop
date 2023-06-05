@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import VideoPopUp from "../src/components/VideoPopUp";
 import Layout from "../src/layouts/Layout";
 import PageTitle from "../src/layouts/PageTitle";
+import Image from 'next/image'
 
 const About = () => {
   const [popup, setPopup] = useState(false);
@@ -79,7 +80,7 @@ const About = () => {
         </section>
         <section className="video-area">
           <div className="bakix-video">
-            <img src="img/bg/video.jpg" alt="Image" />
+            <Image src="img/bg/video.jpg" alt="Image" />
             <a className="popup-video" onClick={() => setPopup(true)} href="#">
               <i className="fas fa-play" />
             </a>
@@ -90,7 +91,7 @@ const About = () => {
             <div className="row">
               <div className="col-xl-5 d-lg-none d-xl-block">
                 <div className="mission-img mb-30">
-                  <img src="img/bg/mission.jpg" alt="Image" />
+                  <Image src="img/bg/mission.jpg" alt="Image" />
                 </div>
               </div>
               <div className="col-xl-7">
@@ -126,7 +127,7 @@ const About = () => {
         </section>
         <section className="big-team-area">
           <div className="big-image">
-            <img src="img/bg/banner.jpg" alt="Banner" />
+            <Image src="img/bg/banner.jpg" alt="Banner" />
           </div>
           <div className="container">
             <div className="row">
@@ -170,7 +171,7 @@ const About = () => {
               <div className="col-lg-4 col-md-6">
                 <div className="team mb-30">
                   <div className="team__img">
-                    <img src="img/team/team4.jpg" alt="Image" />
+                    <Image src="img/team/team4.jpg" alt="Image" />
                   </div>
                   <div className="team__content text-center white-bg">
                     <h4>Salim Rana</h4>
@@ -181,7 +182,7 @@ const About = () => {
               <div className="col-lg-4 col-md-6">
                 <div className="team mb-30">
                   <div className="team__img">
-                    <img src="img/team/team5.jpg" alt="Image" />
+                    <Image src="img/team/team5.jpg" alt="Image" />
                   </div>
                   <div className="team__content text-center white-bg">
                     <h4>James Tablon</h4>
@@ -192,7 +193,7 @@ const About = () => {
               <div className="col-lg-4 col-md-6">
                 <div className="team mb-30">
                   <div className="team__img">
-                    <img src="img/team/team6.jpg" alt="Image" />
+                    <Image src="img/team/team6.jpg" alt="Image" />
                   </div>
                   <div className="team__content text-center white-bg">
                     <h4>Mikado Rikoda</h4>

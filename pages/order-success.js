@@ -5,6 +5,7 @@ import Layout from "../src/layouts/Layout";
 import PageTitle from "../src/layouts/PageTitle";
 import { getCarts } from "../src/redux/action/utilis";
 import { totalPrice } from "../src/utils/utils";
+import Image from 'next/image'
 
 const OrderSuccess = ({ getCarts }) => {
   useEffect(() => {
@@ -51,7 +52,7 @@ const OrderSuccess = ({ getCarts }) => {
                             <tr key={cart.id}>
                               <td className="product-thumbnail">
                                 <a href="#" onClick={(e) => e.preventDefault()}>
-                                  <img src={cart.img1} alt="cart" />
+                                  <Image src={cart.img1} alt="cart" />
                                 </a>
                               </td>
                               <td className="product-name">

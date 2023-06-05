@@ -15,6 +15,7 @@ import { getTopSeller } from "../src/redux/action/seller";
 import { getUpcomingProduct } from "../src/redux/action/upcomingProduct";
 import { filterBlog } from "../src/utils/filterBlog";
 import { getDiscount } from "../src/utils/utils";
+import Image from 'next/image'
 
 const Index = ({
   getHome1,
@@ -56,7 +57,7 @@ const Index = ({
                     </div>
 
                     <div className="shape-icon bounce-animate">
-                      <img src={slide.shapIcon} alt="" />
+                      <Image src={slide.shapIcon} alt="" />
                     </div>
                     <div className="container-fluid">
                       <div className="row">
@@ -101,7 +102,7 @@ const Index = ({
                                 data-delay={j === 0 ? ".9s" : "1.2s"}
                                 key={j}
                               >
-                                <img src={img.src} alt="" />
+                                <Image src={img.src} alt="" />
                               </div>
                             ))}
                         </div>
@@ -121,7 +122,7 @@ const Index = ({
                     <div className="banner mb-30">
                       <Link href="/shop">
                         <a>
-                          <img src={announcement} alt="announcement" />
+                          <Image src={announcement} alt="announcement" />
                         </a>
                       </Link>
                     </div>
@@ -152,7 +153,7 @@ const Index = ({
               <div className="row">
                 <div className="col-xl-5 col-lg-5">
                   <div className="top-seller mb-50">
-                    <img src={topSeller[0].topProduct.img} alt="Product" />
+                    <Image src={topSeller[0].topProduct.img} alt="Product" />
                     <div className="seller-box text-center">
                       <div className="top-seller-content text-left">
                         <h2>
@@ -184,7 +185,7 @@ const Index = ({
                 </div>
                 <div className="col-xl-7 col-lg-7">
                   <div className="top-seller text-right mb-50">
-                    <img src={topSeller[0].banner} alt="topseller" />
+                    <Image src={topSeller[0].banner} alt="topseller" />
                     <div className="sellet-2-content">
                       <h2>
                         <Link href="/shop">{topSeller[0].name}</Link>

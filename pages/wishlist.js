@@ -4,6 +4,8 @@ import { toast } from "react-hot-toast";
 import { connect, useSelector } from "react-redux";
 import Layout from "../src/layouts/Layout";
 import PageTitle from "../src/layouts/PageTitle";
+import Image from 'next/image'
+
 import {
   addToCart,
   addWishlist,
@@ -47,7 +49,7 @@ const Wishlist = ({ getWishlist, addToCart, addWishlist }) => {
                               <tr key={wishlist.id}>
                                 <td className="product-thumbnail">
                                   <a href="#">
-                                    <img src={wishlist.img1} alt="wishlist" />
+                                    <Image src={wishlist.img1} alt="wishlist" />
                                   </a>
                                 </td>
                                 <td className="product-name">

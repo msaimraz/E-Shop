@@ -10,6 +10,7 @@ import {
   removeCart,
 } from "../src/redux/action/utilis";
 import { totalPrice } from "../src/utils/utils";
+import Image from 'next/image'
 
 const Cart = ({ removeCart, addToCart, decreaseCart }) => {
   const carts = useSelector((state) => state.utilis.carts);
@@ -58,7 +59,7 @@ const Cart = ({ removeCart, addToCart, decreaseCart }) => {
                               <tr key={cart.id}>
                                 <td className="product-thumbnail">
                                   <a href="#">
-                                    <img src={cart.img1} alt="cart" />
+                                    <Image src={cart.img1} alt="cart" />
                                   </a>
                                 </td>
                                 <td className="product-name">

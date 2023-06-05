@@ -14,6 +14,7 @@ import { getHome2 } from "../src/redux/action/home";
 import { getProducts } from "../src/redux/action/product";
 import { filterBlog } from "../src/utils/filterBlog";
 import { getDiscount } from "../src/utils/utils";
+import Image from 'next/image'
 
 const Index2 = ({
   getBlog,
@@ -55,7 +56,7 @@ const Index2 = ({
                       </h2>
                     </div>
                     <div className="shape-icon bounce-animate">
-                      <img src={slide.shapImg} alt="shapImg" />
+                      <Image src={slide.shapImg} alt="shapImg" />
                     </div>
                     <div className="container-fluid">
                       <div className="row">

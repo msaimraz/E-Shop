@@ -602,10 +602,7 @@
     ],
     "brand": "dior",
     "stock": false,
-    "size": [
-      "M",
-      "L"
-    ],
+    "size": "M",
     "id": "12",
     "sale": true
   },

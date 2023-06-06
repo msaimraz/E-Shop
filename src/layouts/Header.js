@@ -19,13 +19,11 @@ const Header = ({
   }, []);
   return (
     <header
-      className={`${
-        transparent
-          ? `transparent-header ${
-              extraTransparentClass ? extraTransparentClass : ""
-            }`
+      className={`${transparent
+          ? `transparent-header ${extraTransparentClass ? extraTransparentClass : ""
+          }`
           : ""
-      }`}
+        }`}
     >
       <div
         className="header-area box-90"
@@ -43,13 +41,13 @@ const Header = ({
               <div className="header-right f-right">
                 <ul>
                   <SearchTrigger />
-                  <li className="login-btn">
+                  {/* <li className="login-btn">
                     <Link href="/login">
                       <a>
                         <i className="far fa-user" />
                       </a>
                     </Link>
-                  </li>
+                  </li> */}
                   <ShopCart />
                 </ul>
               </div>

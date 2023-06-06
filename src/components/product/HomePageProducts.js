@@ -5,7 +5,7 @@ import Product from "./Product";
 
 const HomePageProducts = ({ products }) => {
   return (
-    <section className="product-area box-90 pt-70 pb-40 slick-slider">
+    <section className="product-area box-90 pt-70 pb-40 slick-slider slick_home_add">
       <div className="container-fluid">
         <TabContainer defaultActiveKey="all">
           <div className="row">

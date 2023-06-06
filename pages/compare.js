@@ -4,7 +4,6 @@ import { connect, useSelector } from "react-redux";
 import Layout from "../src/layouts/Layout";
 import PageTitle from "../src/layouts/PageTitle";
 import { getCompare, removeCompare } from "../src/redux/action/utilis";
-import Image from 'next/image'
 
 const Compare = ({ getCompare, removeCompare }) => {
   useEffect(() => {
@@ -41,7 +40,7 @@ const Compare = ({ getCompare, removeCompare }) => {
                               <tr key={compare.id}>
                                 <td className="product-thumbnail">
                                   <a href="#">
-                                    <Image src={compare.img1} alt="cart" />
+                                    <img src={compare.img1} alt="cart" />
                                   </a>
                                 </td>
                                 <td className="product-name">

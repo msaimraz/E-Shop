@@ -35,7 +35,7 @@ const MobileHeader = () => {
               <Link href="/">
                 <a>Home</a>
               </Link>
-              <a
+              {/* <a
                 className="mean-expand"
                 href="#"
                 onClick={(e) => {
@@ -45,7 +45,7 @@ const MobileHeader = () => {
               >
                 {subMenu === "home" ? "-" : "+"}
               </a>
-              {/* <ul className={`submenu ${subMenu === "home" ? "block" : ""}`}>
+              <ul className={`submenu ${subMenu === "home" ? "block" : ""}`}>
                 <li>
                   <Link href="/">
                     <a>Home Style 1</a>

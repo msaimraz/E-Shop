@@ -8,7 +8,6 @@ import Layout from "../../src/layouts/Layout";
 import PageTitle from "../../src/layouts/PageTitle";
 import { getBlog } from "../../src/redux/action/blog";
 import { dblock } from "../../src/utils/utils";
-import Image from 'next/image'
 
 const Blog = ({ getBlog, blogs }) => {
   useEffect(() => {
@@ -42,7 +41,7 @@ const Blog = ({ getBlog, blogs }) => {
                               closePopup={() => setOpup(false)}
                             />
                           )}
-                          <Image src={blog.img} alt="blog image" />
+                          <img src={blog.img} alt="blog image" />
                           <a
                             className="popup-video video-btn"
                             //    href="https://www.youtube.com/watch?v=Y6MlVop80y0"
@@ -58,7 +57,7 @@ const Blog = ({ getBlog, blogs }) => {
                       ) : (
                         <div className="postbox__thumb">
                           <Link href={`/blog/${blog.id}`}>
-                            <Image src={blog.img} alt="blog image" />
+                            <img src={blog.img} alt="blog image" />
                           </Link>
                         </div>
                       )}

@@ -10,8 +10,6 @@ import {
   removeCompare,
 } from "../../redux/action/utilis";
 import ProductModal from "./ProductModal";
-import Image from 'next/image'
-
 const Product = ({
   product,
   wrapperPadding0,
@@ -79,8 +77,8 @@ const Product = ({
       <div className="product-img mb-25">
         <Link href={`/shop/${product.id}`}>
           <a>
-            <Image src={product.img1} alt="img 1" />
-            <Image className="secondary-img" src={product.img2} alt="imge 2" />
+            <img src={product.img1} alt="img 1" />
+            <img className="secondary-img" src={product.img2} alt="imge 2" />
           </a>
         </Link>
 
@@ -140,10 +138,11 @@ const Product = ({
           <a
             href="#"
             onClick={(e) => onClickWishlist(e)}
-            className={` ${wishlist && wishlist.find((pro) => pro.id === product.id)
-              ? "active"
-              : ""
-              } `}
+            className={` ${
+              wishlist && wishlist.find((pro) => pro.id === product.id)
+                ? "active"
+                : ""
+            } `}
           >
             <i className="far fa-heart" title="Wishlist" />
           </a>

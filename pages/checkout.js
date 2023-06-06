@@ -30,14 +30,15 @@ const Checkout = ({ setCheckoutData }) => {
   const [active4, setActive4] = useState(false);
 
   const countrys = [
-    "bangladesh",
-    "Algeria",
-    "Afghanistan",
-    "Ghana",
-    "Albania",
-    "Bahrain",
-    "Colombia",
-    "Dominican Republic",
+    // "bangladesh",
+    // "Algeria",
+    // "Afghanistan",
+    // "Ghana",
+    // "Albania",
+    // "Bahrain",
+    // "Colombia",
+    // "Dominican Republic",
+    "Pakistan"
   ];
 
   return (
@@ -45,12 +46,11 @@ const Checkout = ({ setCheckoutData }) => {
       <main>
         <PageTitle active="Checkout" pageHeading="Checkout" />
 
-        <section className="coupon-area pt-100 pb-30">
+        {/* <section className="coupon-area pt-100 pb-30">
           <div className="container">
             <div className="row">
               <div className="col-md-6">
                 <div className="coupon-accordion">
-                  {/* ACCORDION START */}
                   <h3>
                     Returning customer?{" "}
                     <span id="showlogin" onClick={() => setActiveId(!activeId)}>
@@ -130,12 +130,10 @@ const Checkout = ({ setCheckoutData }) => {
                       </div>
                     </div>
                   </div>
-                  {/* ACCORDION END */}
                 </div>
               </div>
               <div className="col-md-6">
                 <div className="coupon-accordion">
-                  {/* ACCORDION START */}
                   <h3>
                     Have a coupon?{" "}
                     <span id="showcoupon" onClick={() => setActive2(!active2)}>
@@ -199,12 +197,11 @@ const Checkout = ({ setCheckoutData }) => {
                       </div>
                     </div>
                   </div>
-                  {/* ACCORDION END */}
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         <Formik
           initialValues={checkoutSchema.initialValue}
@@ -414,7 +411,7 @@ const Checkout = ({ setCheckoutData }) => {
                             <div
                               className={`custom-acc ${active3 ? "show" : ""}`}
                             >
-                              <div
+                              {/* <div
                                 id="cbox_info"
                                 className="checkout-form-list create-account"
                               >
@@ -433,11 +430,11 @@ const Checkout = ({ setCheckoutData }) => {
                                   handleBlur={handleBlur}
                                   handleChange={handleChange}
                                 />
-                              </div>
+                              </div> */}
                             </div>
                           </div>
                         </div>
-                        <div className="different-address">
+                        {/* <div className="different-address">
                           <div className="ship-different-title">
                             <h3>
                               <label>Ship to a different address?</label>
@@ -614,7 +611,7 @@ const Checkout = ({ setCheckoutData }) => {
                               />
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                     <div className="col-lg-6">
@@ -699,15 +696,15 @@ const Checkout = ({ setCheckoutData }) => {
                                         $
                                         {flat && freeShpping
                                           ? (
-                                              price -
-                                              flatPrice -
-                                              shppingPrice
-                                            ).toFixed(2)
+                                            price -
+                                            flatPrice -
+                                            shppingPrice
+                                          ).toFixed(2)
                                           : flat
-                                          ? (price - flatPrice).toFixed(2)
-                                          : freeShpping
-                                          ? (price - shppingPrice).toFixed(2)
-                                          : price}
+                                            ? (price - flatPrice).toFixed(2)
+                                            : freeShpping
+                                              ? (price - shppingPrice).toFixed(2)
+                                              : price}
                                       </span>
                                     )}
                                   </strong>
@@ -717,7 +714,7 @@ const Checkout = ({ setCheckoutData }) => {
                           </table>
                         </div>
                         <div className="payment-method">
-                          <Accordion defaultActiveKey="0">
+                          {/* <Accordion defaultActiveKey="0">
                             <Card>
                               <Card.Header>
                                 <h5 className="mb-0">
@@ -780,7 +777,7 @@ const Checkout = ({ setCheckoutData }) => {
                                 </Card.Body>
                               </Accordion.Collapse>
                             </Card>
-                          </Accordion>
+                          </Accordion> */}
                           <div className="order-button-payment mt-20">
                             <button
                               type="submit"

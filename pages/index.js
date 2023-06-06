@@ -15,7 +15,6 @@ import { getTopSeller } from "../src/redux/action/seller";
 import { getUpcomingProduct } from "../src/redux/action/upcomingProduct";
 import { filterBlog } from "../src/utils/filterBlog";
 import { getDiscount } from "../src/utils/utils";
-import Image from 'next/image'
 
 const Index = ({
   getHome1,
@@ -57,7 +56,7 @@ const Index = ({
                     </div>
 
                     <div className="shape-icon bounce-animate">
-                      <Image src={slide.shapIcon} alt="" />
+                      <img src={slide.shapIcon} alt="" />
                     </div>
                     <div className="container-fluid">
                       <div className="row">
@@ -102,7 +101,7 @@ const Index = ({
                                 data-delay={j === 0 ? ".9s" : "1.2s"}
                                 key={j}
                               >
-                                <Image src={img.src} alt="" />
+                                <img src={img.src} alt="" />
                               </div>
                             ))}
                         </div>
@@ -113,7 +112,7 @@ const Index = ({
             </HomeSlider>
           </div>
         </section>
-        <section className="banner-area pt-30 pl-15 pr-15">
+        {/* <section className="banner-area pt-30 pl-15 pr-15">
           <div className="container-fluid">
             <div className="row">
               {home1 &&
@@ -122,7 +121,7 @@ const Index = ({
                     <div className="banner mb-30">
                       <Link href="/shop">
                         <a>
-                          <Image src={announcement} alt="announcement" />
+                          <img src={announcement} alt="announcement" />
                         </a>
                       </Link>
                     </div>
@@ -130,9 +129,9 @@ const Index = ({
                 ))}
             </div>
           </div>
-        </section>
+        </section> */}
         <HomePageProducts products={products} />
-        {topSeller && (
+        {/* {topSeller && (
           <section className="top-seller-area box-90">
             <div className="container-fluid">
               <div className="row">
@@ -153,7 +152,7 @@ const Index = ({
               <div className="row">
                 <div className="col-xl-5 col-lg-5">
                   <div className="top-seller mb-50">
-                    <Image src={topSeller[0].topProduct.img} alt="Product" />
+                    <img src={topSeller[0].topProduct.img} alt="Product" />
                     <div className="seller-box text-center">
                       <div className="top-seller-content text-left">
                         <h2>
@@ -185,7 +184,7 @@ const Index = ({
                 </div>
                 <div className="col-xl-7 col-lg-7">
                   <div className="top-seller text-right mb-50">
-                    <Image src={topSeller[0].banner} alt="topseller" />
+                    <img src={topSeller[0].banner} alt="topseller" />
                     <div className="sellet-2-content">
                       <h2>
                         <Link href="/shop">{topSeller[0].name}</Link>
@@ -217,12 +216,12 @@ const Index = ({
               </div>
             </div>
           </section>
-        )}
+        )} */}
 
-        <HomePageSingleProduct products={products} />
+        {/* <HomePageSingleProduct products={products} />
         <UpcomingProduct upcomingProduct={upcomingProduct} />
-        {/* {blogs && <Blogs blogs={blogs} />} */}
-        {/* <Newsletter /> */}
+        {blogs && <Blogs blogs={blogs} />}
+        <Newsletter /> */}
       </main>
     </Layout>
   );

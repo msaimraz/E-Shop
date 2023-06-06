@@ -4,8 +4,6 @@ import { toast } from "react-hot-toast";
 import { connect, useSelector } from "react-redux";
 import { addToCart, addWishlist } from "../../redux/action/utilis";
 import ProductModal from "./ProductModal";
-import Image from 'next/image'
-
 const ProductListView = ({ product, col5, addToCart, addWishlist }) => {
   const wishlist = useSelector((state) => state.utilis.wishlist);
   const [quickView, setQuickView] = useState(false);
@@ -42,8 +40,8 @@ const ProductListView = ({ product, col5, addToCart, addWishlist }) => {
           <div className="product-img">
             <Link href={`/shop/${product.id}`}>
               <a>
-                <Image src={product.img1} alt="img 1" />
-                <Image
+                <img src={product.img1} alt="img 1" />
+                <img
                   className="secondary-img"
                   src={product.img2}
                   alt="imge 2"
@@ -99,10 +97,11 @@ const ProductListView = ({ product, col5, addToCart, addWishlist }) => {
             </a>
             <a
               href="#"
-              className={` ${wishlist && wishlist.find((pro) => pro.id === product.id)
-                ? "active"
-                : ""
-                } `}
+              className={` ${
+                wishlist && wishlist.find((pro) => pro.id === product.id)
+                  ? "active"
+                  : ""
+              } `}
               onClick={(e) => onClickWishlist(e)}
             >
               <i className="flaticon-like" />

@@ -25,7 +25,7 @@ const MultipleRowsSlider = ({ children, slideShow }) => {
     slidesToScroll: 1,
     prevArrow: <PrevArrow />,
     nextArrow: <NextArrow />,
-    rows: 2,
+    rows: 3,
     responsive: [
       {
         breakpoint: 700,
@@ -33,7 +33,7 @@ const MultipleRowsSlider = ({ children, slideShow }) => {
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: false,
-          rows: 1,
+          rows: 3,
         },
       },
       {

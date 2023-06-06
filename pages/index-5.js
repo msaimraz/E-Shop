@@ -14,7 +14,6 @@ import { getHome5 } from "../src/redux/action/home";
 import { getProducts } from "../src/redux/action/product";
 import { filterBlog } from "../src/utils/filterBlog";
 import { simpleProductFilter } from "../src/utils/filterProduct";
-import Image from 'next/image'
 
 const Index5 = ({
   getBlog,
@@ -85,12 +84,12 @@ const Index5 = ({
               <div className="col-lg-4 col-md-6">
                 <div className="banner mb-30">
                   <Link href="/shop">
-                    <Image src="/img/banner/banner-5/banner1.jpg" alt="Banner" />
+                    <img src="/img/banner/banner-5/banner1.jpg" alt="Banner" />
                   </Link>
                 </div>
                 <div className="banner mb-30">
                   <Link href="/shop">
-                    <Image src="/img/banner/banner-5/banner5.jpg" alt="Banner" />
+                    <img src="/img/banner/banner-5/banner5.jpg" alt="Banner" />
                   </Link>
                 </div>
               </div>
@@ -99,7 +98,7 @@ const Index5 = ({
                   <div className="col-lg-6">
                     <div className="banner mb-30">
                       <Link href="/shop">
-                        <Image
+                        <img
                           src="/img/banner/banner-5/banner2.jpg"
                           alt="Banner"
                         />
@@ -109,7 +108,7 @@ const Index5 = ({
                   <div className="col-lg-6">
                     <div className="banner mb-30">
                       <Link href="/shop">
-                        <Image
+                        <img
                           src="/img/banner/banner-5/banner3.jpg"
                           alt="Banner"
                         />
@@ -119,7 +118,7 @@ const Index5 = ({
                   <div className="col-lg-12">
                     <div className="banner mb-30">
                       <Link href="/shop">
-                        <Image
+                        <img
                           src="/img/banner/banner-5/banner4.jpg"
                           alt="Banner"
                         />

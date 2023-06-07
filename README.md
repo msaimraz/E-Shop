@@ -15,5 +15,3 @@ Run npm run build Builds the app for production to the `build` folder. It correc
 
 Further help :-
 To get more help on the nextjs.js checkout nextjs
-
-Note: You can learn more in the Create Next App Documentation. To learn Next, check out the Next Documentation.

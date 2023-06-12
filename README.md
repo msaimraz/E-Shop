@@ -2,7 +2,6 @@
 
 # Installing
 Make sure if NODEJS is installed on your computer
-
 Run npm install -g create-react-app command from your teminal to install React Globally.
 
 # Install npm :-
